@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
+const axios = require('axios');
 
 function List() {
   const [shirtData, setShirtData] = useState([]);
   const [pantsData, setPantsData] = useState([]);
   const [jacketData, setJacketData] = useState([]);
   const [outfitData, setOutfitData] = useState([]);
+  const [shirtSelected, setShirtSelected] = useState({});
+  const [pantsSelected, setPantsSelected] = useState({});
+  const [jacketSelected, setJacketSelected] = useState({});
 
   const url = 'http://localhost:7000';
 
@@ -31,6 +35,38 @@ function List() {
           )
       );
   }, []);
+
+  const addShirt = e => {
+    const shirtImage = e.target.src;
+    const shirtBrand = e.target.alt;
+    const shirtObject = {
+      brand: shirtBrand,
+      image: shirtImage
+    };
+    setShirtSelected(shirtObject);
+    console.log(shirtSelected);
+  };
+  const addPants = e => {
+    const pantsImage = e.target.src;
+    const pantsBrand = e.target.alt;
+    const pantsObject = {
+      brand: pantsBrand,
+      image: pantsImage
+    };
+    setPantsSelected(pantsObject);
+    console.log(pantsSelected);
+  };
+  const addJacket = e => {
+    const jacketImage = e.target.src;
+    const jacketBrand = e.target.alt;
+    const jacketObject = {
+      brand: jacketBrand,
+      image: jacketImage
+    };
+    setJacketSelected(jacketObject);
+    console.log(jacketSelected);
+  };
+
   return (
     <>
       <h1>Pick Your Nightout Outfit</h1>
@@ -42,8 +78,8 @@ function List() {
               width="100"
               height="100"
               alt={shirt.brand}
+              onClick={addShirt}
             ></img>
-            <button>Add</button>
           </div>
         );
       })}
@@ -55,8 +91,8 @@ function List() {
               width="100"
               height="100"
               alt={pants.brand}
+              onClick={addPants}
             ></img>
-            <button>Add</button>
           </div>
         );
       })}
@@ -68,11 +104,12 @@ function List() {
               width="100"
               height="100"
               alt={jacket.brand}
+              onClick={addJacket}
             ></img>
-            <button>Add</button>
           </div>
         );
       })}
+      <button>Create Your Outfit!</button>
     </>
   );
 }
