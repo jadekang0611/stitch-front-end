@@ -9,14 +9,14 @@ import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <>
+    <div className="background">
       <nav>
         <Container className="nav-bar">
           <Link to="/" className="link">
-            <h2 className="nav-item">List</h2>
+            <h2 className="nav-item">See All Styles</h2>
           </Link>
           <Link to="/collection" className="link">
-            <h2 className="nav-item">Collection</h2>
+            <h2 className="nav-item">Check My Collection</h2>
           </Link>
         </Container>
       </nav>
@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/collection" component={Collection} />
         </Switch>
       </main>
-    </>
+    </div>
   );
 }
 

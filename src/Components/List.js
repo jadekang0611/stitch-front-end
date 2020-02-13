@@ -94,55 +94,60 @@ function List(props) {
 
   return (
     <>
-      <h1>Pick Your Nightout Outfit</h1>
+      <h1 className="sub-title">Pick Your Nightout Outfit</h1>
       <Container className="clothes-container">
         {shirtData.map(shirt => {
           return (
-            <div>
+            <div className="image-container">
               <img
+                className="selection-image"
                 src={shirt.image}
-                width="100"
-                height="100"
                 alt={shirt.brand}
                 onClick={addShirt}
-              ></img>
+              />
             </div>
           );
         })}
       </Container>
+      <hr></hr>
       <Container className="clothes-container">
         {pantsData.map(pants => {
           return (
-            <div>
+            <div className="image-container">
               <img
+                className="selection-image"
                 src={pants.image}
-                width="100"
-                height="100"
                 alt={pants.brand}
                 onClick={addPants}
-              ></img>
+              />
             </div>
           );
         })}
       </Container>
+      <hr></hr>
       <Container className="clothes-container">
         {jacketData.map(jacket => {
           return (
-            <div>
+            <div className="image-container">
               <img
+                className="selection-image"
                 src={jacket.image}
-                width="100"
-                height="100"
                 alt={jacket.brand}
                 onClick={addJacket}
-              ></img>
+              />
             </div>
           );
         })}
       </Container>
       <Container className="create-container">
-        <input onChange={e => setNameSelected(e.target.value)} type="text" />
-        <button onClick={setOutfit}>Create Your Outfit!</button>
+        <input
+          onChange={e => setNameSelected(e.target.value)}
+          type="text"
+          className="input-list"
+        />
+        <button onClick={setOutfit} className="input-button">
+          Create Your Outfit!
+        </button>
       </Container>
     </>
   );

@@ -2,6 +2,7 @@ import ItemCard from './ItemCard';
 import React, { useState, useEffect } from 'react';
 const axios = require('axios');
 
+
 function Collection(props) {
    const [itemCards, setItemCards] = useState([]);
    const url = 'http://localhost:7000';
