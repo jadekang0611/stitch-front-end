@@ -30,7 +30,7 @@ function ItemCard(props) {
             <Row>
               <Col>
                 <h1 className="collection-title">
-                  Collection: {props.outfit.name}
+                  {props.index + 1}. {props.outfit.name}
                 </h1>
               </Col>
             </Row>
@@ -69,19 +69,19 @@ function ItemCard(props) {
           <Container className="collection-box">
             <Row className="collection-row">
               <img
-                className="shirt-collection"
+                className="my-collection"
                 src={props.outfit.shirt.image}
                 alt={props.outfit.shirt.brand}
               ></img>
               <p className="plus">+</p>
               <img
-                className="pants-collection"
+                className="my-collection"
                 src={props.outfit.pants.image}
                 alt={props.outfit.pants.brand}
               ></img>
               <p className="plus">+</p>
               <img
-                className="jacket-collection"
+                className="my-collection"
                 src={props.outfit.jacket.image}
                 alt={props.outfit.jacket.brand}
               ></img>

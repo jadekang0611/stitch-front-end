@@ -1,187 +1,188 @@
 .clothes-container {
-   display: flex;
-   justify-content: space-between;
-   padding-top: 32px;
-   padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .create-container {
-   display: flex;
-   justify-content: center;
-   margin-top: 56px;
-   margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  margin-bottom: 64px;
 }
 
 .input-list {
-   font-family: 'Raleway', sans-serif;
-   outline: none;
-   color: black;
-   width: 240px;
-   height: 40px;
-   border: none;
-   padding-left: 16px;
-   border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  color: black;
+  width: 240px;
+  height: 40px;
+  border: none;
+  padding-left: 16px;
+  border-radius: 4px;
 }
 
 .input-button {
-   font-family: 'Raleway', sans-serif;
-   font-size: 24px;
-   margin-left: 24px;
-   width: 320px;
-   height: 40px;
-   border: none;
-   border-radius: 4px;
-   outline: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  margin-left: 24px;
+  width: 320px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
 }
 
 .input-button:active {
-   margin-left: 24px;
-   width: 160px;
-   height: 40px;
-   border: none;
-   outline: none;
-   color: white;
-   border-radius: 4px;
-   background-color: black;
-   opacity: 0.4;
+  margin-left: 24px;
+  width: 160px;
+  height: 40px;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 4px;
+  background-color: black;
+  opacity: 0.4;
 }
 
 body {
-   background-image: url('./background.png');
+  background-image: url('./background.png');
 }
 nav {
-   margin-top: 36px;
+  margin-top: 36px;
 }
 
 .nav-bar {
-   font-family: 'Raleway', sans-serif;
-   display: flex;
-   justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link {
-   color: #ffffff;
-   border: 1px solid transparent;
-   letter-spacing: 2px;
-   padding: 8px 16px;
+  color: #ffffff;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  padding: 8px 16px;
 }
 .link:hover {
-   background-color: black;
-   opacity: 0.5;
-   color: #ffffff;
-   border: 1px solid #000000;
-   text-decoration: none;
+  background-color: black;
+  opacity: 0.5;
+  color: #ffffff;
+  border: 1px solid #000000;
+  text-decoration: none;
 }
 
 .sub-title {
-   font-family: 'Raleway', sans-serif;
-   text-align: center;
-   padding-top: 64px;
-   padding-bottom: 32px;
-   color: #ffffff;
-   letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 32px;
+  color: #ffffff;
+  letter-spacing: 2px;
 }
 
 .image-container {
-   width: 100%;
-   margin: 16px;
+  width: 100%;
+  margin: 16px;
 }
 
 .selection-image {
-   max-width: 100%;
-   display: block;
-   border: 4px solid #094886;
-   background-color: #ffffff;
-   padding: 20px 20px;
-   border-radius: 16px;
-   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-   object-fit: cover;
-   opacity: 0.6;
+  max-width: 100%;
+  display: block;
+  border: 4px solid #094886;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  opacity: 0.6;
 }
 
 .selection-image:hover {
-   cursor: pointer;
-   border-radius: 16px 56px 16px 16px;
-   transition-delay: 0.12s;
-   opacity: 1;
+  cursor: pointer;
+  border-radius: 16px 56px 16px 16px;
+  transition-delay: 0.12s;
+  opacity: 1;
 }
 
 .selection-image::selection {
-   cursor: pointer;
-   border-radius: 16px 56px 16px 16px;
-   transition-delay: 0.12s;
-   opacity: 1;
+  cursor: pointer;
+  border-radius: 16px 56px 16px 16px;
+  transition-delay: 0.12s;
+  opacity: 1;
 }
 
-.shirt-collection {
-   width: 16%;
-}
-
-.pants-collection {
-   width: 16%;
-}
-
-.jacket-collection {
-   width: 16%;
+.my-collection {
+  width: 24%;
+  border: 4px solid #094886;
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .collection-row {
-   justify-content: center;
+  justify-content: center;
 }
 
 .collection-content {
-   margin-top: 32px;
-   display: block;
-   justify-content: space-between;
+  margin-top: 32px;
+  display: block;
+  justify-content: space-between;
 }
 
 .collection-title {
-   font-family: 'Raleway', sans-serif;
-   color: white;
-   letter-spacing: 2px;
-   line-height: 40px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 40px;
+  font-size: 32px;
 }
 
 .collection-update-button {
-   margin-top: 8px;
-   padding: 4px 16px;
-   height: 40px;
-   border-radius: 4px;
-   background: #000000;
-   opacity: 0.6;
-   color: white;
+  margin-top: 8px;
+  padding: 4px 16px;
+  height: 40px;
+  border-radius: 4px;
+  background: #000000;
+  opacity: 0.6;
+  color: white;
 }
 
 .collection-update-input {
-   margin-top: 8px;
-   padding: 4px 16px;
-   margin-right: 16px;
-   height: 40px;
-   border-radius: 4px;
-   background: #000000;
-   opacity: 0.6;
-   color: white;
+  margin-top: 8px;
+  padding: 4px 16px;
+  margin-right: 16px;
+  height: 40px;
+  border-radius: 4px;
+  background: #000000;
+  opacity: 0.6;
+  color: white;
 }
 
 .collection-delete-button {
-   margin-top: 8px;
-   margin-left: 16px;
+  margin-top: 8px;
+  margin-left: 16px;
 }
 
 .collection-box {
-   margin-top: 32px;
-   border-radius: 4px;
-   display: flex;
+  margin-top: 32px;
+  border-radius: 4px;
+  display: flex;
 }
 
 .plus {
-   font-family: 'Raleway', sans-serif;
-   color: white;
-   font-size: 160px;
-   margin: auto !important;
-   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 160px;
+  margin: auto !important;
+  text-align: center;
 }
 
 .underneath-div {
-   margin-top: 40px;
+  margin-top: 40px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: -24px;
 }

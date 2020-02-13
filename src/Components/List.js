@@ -98,7 +98,6 @@ function List(props) {
 
   return (
     <>
-      <h1 className="sub-title">Pick Your Nightout Outfit</h1>
       <Container className="clothes-container">
         {shirtData.map((shirt, i) => {
           return (
@@ -147,6 +146,7 @@ function List(props) {
         <input
           onChange={e => setNameSelected(e.target.value)}
           type="text"
+          placeholder="Name your outfit"
           className="input-list"
         />
         <button onClick={setOutfit} className="input-button">

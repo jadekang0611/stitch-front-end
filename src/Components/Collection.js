@@ -16,7 +16,7 @@ function Collection(props) {
         itemCards.map((card, i) => {
           return (
             <div key={i}>
-              <ItemCard outfit={card} />
+              <ItemCard outfit={card} index={i} />
             </div>
           );
         })}
